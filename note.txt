@@ -8,3 +8,4 @@ npx tsc
 node build/index.js
 
 test
+npm test

@@ -1,5 +1,10 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
+  "exclude": ["test"],
+  "include": [
+  "src/**/*.ts",
+  "tests/*.ts"
+  ],
   "compilerOptions": {
     // File Layout
     "rootDir": "./src",
@@ -9,7 +14,7 @@
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
-    "types": [],
+    "types": ["jest","node"],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],

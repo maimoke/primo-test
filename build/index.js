@@ -12,7 +12,6 @@ function hello(who = world) {
 function merge(collection_1, collection_2, collection_3) {
     collection_2.reverse();
     var sorted = [];
-    //sort
     var numCol1 = collection_1.pop();
     if (numCol1 === undefined) {
         numCol1 = -1;
@@ -30,6 +29,7 @@ function merge(collection_1, collection_2, collection_3) {
         // console.log(numCol1)
         // console.log(numCol2)
         // console.log(numCol3)
+        //compare
         if (numCol1 == -1 && numCol2 == -1 && numCol3 == -1) {
             break;
         }
@@ -46,6 +46,7 @@ function merge(collection_1, collection_2, collection_3) {
         else {
             break;
         }
+        //pop next
         if (push == 1) {
             sorted.push(numCol1);
             numCol1 = collection_1.pop();
