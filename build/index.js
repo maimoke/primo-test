@@ -2,12 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.hello = hello;
 exports.merge = merge;
-const world = "world";
-const col1 = [1, 5, 7]; //min to max
-const col2 = [8, 6, 3, 2]; //max to min
-const col3 = [0, 4, 9, 2]; //min to max
-function hello(who = world) {
-    return `Hello ${who}!`;
+var world = "world";
+var col1 = [1, 5, 7]; //min to max
+var col2 = [8, 6, 3, 2]; //max to min
+var col3 = [0, 4, 9, 2]; //min to max
+function hello(who) {
+    if (who === void 0) { who = world; }
+    return "Hello ".concat(who, "!");
 }
 function merge(collection_1, collection_2, collection_3) {
     collection_2.reverse();
@@ -33,7 +34,7 @@ function merge(collection_1, collection_2, collection_3) {
         if (numCol1 == -1 && numCol2 == -1 && numCol3 == -1) {
             break;
         }
-        let push = 0;
+        var push = 0;
         if (numCol1 > numCol2 && numCol1 > numCol3) {
             push = 1;
         }
@@ -72,5 +73,4 @@ function merge(collection_1, collection_2, collection_3) {
     }
     return sorted.reverse();
 }
-console.log(merge(col1, col2, col3));
-//# sourceMappingURL=index.js.map
+// console.log(merge(col1, col2, col3));

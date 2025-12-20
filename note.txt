@@ -1,7 +1,5 @@
 install dependency
-npm init -y
-npm i -D typescript ts-node eslint prettier @types/node
-npx tsc --init
+npm i
 
 excute code
 npx tsc
